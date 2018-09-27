@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.gihanmora.pirith.Rathana">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cc"
+        android:minHeight="1100dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/gohome"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:background="@drawable/home"
+            android:elevation="0dp"
+            android:onClick="onClick"
+            android:verticalScrollbarPosition="right"
+            android:visibility="visible"
+            tools:verticalScrollbarPosition="right" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/button9"
+            android:layout_toRightOf="@+id/button9"
+            android:background="@drawable/pause" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/button11"
+            android:layout_toRightOf="@+id/button11"
+            android:background="@drawable/stop" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1.15"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:layout_above="@+id/adView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:minHeight="1200dp"
+            android:layout_below="@+id/seekBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/gohome"
+                android:background="@drawable/aa"
+                android:gravity="center"
+                android:minHeight="249dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/button12"
+                    android:layout_alignRight="@+id/button12"
+                    android:layout_below="@+id/button9"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_weight="1.15"
+                    android:minHeight="180dp"
+                    android:text="@string/rathna" />
+            </LinearLayout>
+        </ScrollView>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.15"
+            android:background="@drawable/aa"
+            android:layout_below="@+id/gohome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

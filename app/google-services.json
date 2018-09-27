@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "237692451254",
+    "firebase_url": "https://pirith-72fac.firebaseio.com",
+    "project_id": "pirith-72fac",
+    "storage_bucket": "pirith-72fac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237692451254:android:d85445e85aa87ee6",
+        "android_client_info": {
+          "package_name": "com.blogspot.gihanmora.pirith"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237692451254-ct3cjq7gde5pr4mrjrv1b5c7q4fddioe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blogspot.gihanmora.pirith",
+            "certificate_hash": "3175f6f4584bf253e367d82c8e5d828e8351374a"
+          }
+        },
+        {
+          "client_id": "237692451254-kg6tchc5qcf0g7405cfo4r98c8bh1pac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnVM4QnOiF0GQaVxLFypJ3erqmvcsuZ98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237692451254-kg6tchc5qcf0g7405cfo4r98c8bh1pac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
